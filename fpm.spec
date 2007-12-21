@@ -13,6 +13,7 @@ URL:		http://fpm.sourceforge.net/
 Buildrequires:	gtk+-devel 
 Buildrequires:  automake1.8
 Buildrequires:  libgnome-devel
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}--buildroot
 
 %description
 Figaro's Password Manager is a program that allows you to securely store the
