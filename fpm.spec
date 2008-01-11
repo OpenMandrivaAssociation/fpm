@@ -48,16 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %{makeinstall_std} MKINSTALLDIRS=%{_datadir}/automake-1.9/mkinstalldirs
 
 # menu
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="fpm" \
-needs="x11" \
-icon="other_archiving.png" \
-section="System/Archiving/Other" \
-title="Fpm" \
-longtitle="Fpm password manager" \
-xdg="true"
-EOF
 
 #xdg
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -87,7 +77,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS COPYING ChangeLog NEWS README TODO
 %{_bindir}/%{name}
 %{_datadir}/pixmaps/%{name}/*
-%{_menudir}/%{name}
 %_mandir/man1/*
 %{_datadir}/applications/*
 
