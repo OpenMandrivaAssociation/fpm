@@ -56,7 +56,7 @@ cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 Name=%{name}
 Comment=%{Summary}
 Exec=%{name} 
-Icon=other_archiving.png
+Icon=other_archiving
 Terminal=false
 Type=Application
 Categories=X-MandrivaLinux-System-Archiving-Other;Archiving
