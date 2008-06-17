@@ -1,6 +1,6 @@
 %define	name	fpm
 %define	version	0.60
-%define	release	%mkrel 5
+%define	release	%mkrel 6
 
 Summary:	Figaro's Password Manager
 Name:		%{name}
@@ -13,6 +13,7 @@ URL:		http://fpm.sourceforge.net/
 Buildrequires:	gtk+-devel 
 Buildrequires:  automake1.8
 Buildrequires:  libgnome-devel
+Buildrequires:  xml2-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}--buildroot
 
 %description
