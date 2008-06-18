@@ -13,7 +13,7 @@ URL:		http://fpm.sourceforge.net/
 Buildrequires:	gtk+-devel 
 Buildrequires:  automake1.8
 Buildrequires:  libgnome-devel
-Buildrequires:  xml2-devel
+Buildrequires:  libxml2-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}--buildroot
 
 %description
