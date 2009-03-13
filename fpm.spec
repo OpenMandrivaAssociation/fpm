@@ -1,6 +1,6 @@
 %define	name	fpm
 %define	version	0.60
-%define	release	%mkrel 7
+%define	release	%mkrel 8
 
 Summary:	Figaro's Password Manager
 Name:		%{name}
@@ -11,10 +11,9 @@ License:	GPL
 Source0:	%{name}-%{version}.tar.bz2
 URL:		http://fpm.sourceforge.net/
 Buildrequires:	gtk+-devel 
-Buildrequires:  automake1.8
 Buildrequires:  libgnome-devel
 Buildrequires:  libxml2-devel
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}--buildroot
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Figaro's Password Manager is a program that allows you to securely store the
@@ -45,8 +44,8 @@ CFLAGS="`xml2-config --cflags` $RPM_OPT_FLAGS" \
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%{makeinstall_std} MKINSTALLDIRS=%{_datadir}/automake-1.9/mkinstalldirs
+rm -rf %{buildroot}
+%{makeinstall_std}
 
 # menu
 
@@ -75,7 +74,7 @@ EOF
 %endif
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
