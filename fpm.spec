@@ -54,12 +54,12 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Name=%{name}
-Comment=%{Summary}
+Comment=%{summary}
 Exec=%{name} 
 Icon=other_archiving
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-System-Archiving-Other;Archiving
+Categories=Utility;Archiving;
 EOF
 
 
