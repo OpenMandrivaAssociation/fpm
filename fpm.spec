@@ -1,6 +1,6 @@
 %define	name	fpm
 %define	version	0.60
-%define	release	%mkrel 9
+%define	release	%mkrel 10
 
 Summary:	Figaro's Password Manager
 Name:		%{name}
