@@ -84,3 +84,58 @@ rm -rf %{buildroot}
 %_mandir/man1/*
 %{_datadir}/applications/*
 
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.60-10mdv2011.0
++ Revision: 610745
+- rebuild
+
+* Sat May 01 2010 Funda Wang <fwang@mandriva.org> 0.60-9mdv2010.1
++ Revision: 541469
+- fix desktop
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 0.60-9mdv2010.0
++ Revision: 437575
+- rebuild
+
+* Sat Mar 14 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.60-8mdv2009.1
++ Revision: 354771
+- rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - Buildrequires xml2-devel for xml2-config
+    - fix 'error: for key "Icon" in group "Desktop Entry" is an icon name with an
+      extension, but there should be no extension as described in the Icon Theme
+      Specification if the value is not an absolute path'
+    - drop old menu
+    - kill re-definition of %%buildroot on Pixel's request
+    - import fpm
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Wed Aug 09 2006 Lenny Cartier <lenny@mandriva.com> 0.60-5mdv2007.0
+- xdg
+
+* Wed Apr 26 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.60-4mdk
+- Fix BuildRequires
+
+* Wed Apr 26 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.60-3mdk
+- Fix BuildRequires
+
+* Tue Jan 03 2006 Lenny Cartier <lenny@mandriva.com> 0.60-2mdk
+- rebuild
+
+* Sun Jul 25 2004 Per Ã˜yvind Karlsen <peroyvind@linux-mandrake.com> 0.60-1mdk
+- 0.60
+- update url
+- cleanups
+
+* Mon Oct 13 2003 Lenny Cartier <lenny@mandrakesoft.com> 0.56-1mdk
+- 0.56
