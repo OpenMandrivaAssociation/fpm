@@ -9,7 +9,7 @@ Release:	%{release}
 Group:		Graphical desktop/GNOME
 License:	GPL
 Source0:	%{name}-%{version}.tar.bz2
-URL:		http://fpm.sourceforge.net/
+URL:		https://fpm.sourceforge.net/
 Buildrequires:	gtk+-devel 
 Buildrequires:  libgnome-devel
 Buildrequires:  libxml2-devel
