@@ -10,6 +10,11 @@ Group:		Graphical desktop/GNOME
 License:	GPL
 Source0:	%{name}-%{version}.tar.bz2
 URL:		https://fpm.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 Buildrequires:	gtk+-devel 
 Buildrequires:  libgnome-devel
 Buildrequires:  libxml2-devel
